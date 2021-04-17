@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-
-import { CarItem } from './components';
+import { CarsList, Header } from './components';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <Header />
+      <CarsList />
       <StatusBar style='auto' />
     </View>
   );
